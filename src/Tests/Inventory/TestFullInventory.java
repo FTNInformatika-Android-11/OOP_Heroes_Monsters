@@ -1,4 +1,4 @@
-package Tests;
+package Tests.Inventory;
 
 import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;

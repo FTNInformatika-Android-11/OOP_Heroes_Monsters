@@ -1,4 +1,4 @@
-package Tests;
+package Tests.ChangeWeapon;
 
 import Exceptions.FullInventoryException;
 import Exceptions.NoWeaponException;

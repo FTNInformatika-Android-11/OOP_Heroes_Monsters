@@ -1,4 +1,4 @@
-package Tests;
+package Tests.GetWeapon;
 
 import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;

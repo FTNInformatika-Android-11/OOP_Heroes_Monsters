@@ -1,18 +1,19 @@
-package Tests;
+package Tests.ChangeWeapon;
 
 import Exceptions.FullInventoryException;
+import Exceptions.NoWeaponException;
 import Exceptions.PickUpException;
 import Models.Heroes.Swordsman;
 import Models.Weapons.Spear;
 import Models.Weapons.Sword;
 
-public class TestSwordsmanSwordSpear {
-    public static void main(String[] args) throws PickUpException, FullInventoryException {
+public class TestChangeWeapon2 {
+    public static void main(String[] args) throws PickUpException, FullInventoryException, NoWeaponException {
         Swordsman swordsman = new Swordsman();
         Sword sword = new Sword();
-        Spear spear = new Spear();
 
         swordsman.getWeapon(sword);
-        swordsman.getWeapon(spear);
+
+        swordsman.changeWeapon();
     }
 }

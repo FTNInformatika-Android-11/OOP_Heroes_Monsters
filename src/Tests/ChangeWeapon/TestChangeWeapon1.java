@@ -1,4 +1,4 @@
-package Tests;
+package Tests.ChangeWeapon;
 
 import Exceptions.NoWeaponException;
 import Models.Heroes.Swordsman;
