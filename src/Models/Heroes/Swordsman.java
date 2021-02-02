@@ -18,6 +18,7 @@ public class Swordsman extends Hero {
         } else if (weapon instanceof Sword || weapon instanceof Spear) {
             if (inventory.size() == 0 || inventory.size() == 1) {
                 inventory.add(weapon);
+                super.weapon = weapon;
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
             } else {
                 System.out.println("Inventory is full");

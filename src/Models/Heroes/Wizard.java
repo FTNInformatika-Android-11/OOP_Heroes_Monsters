@@ -16,8 +16,13 @@ public class Wizard extends Hero {
         if (weapon instanceof Sword || weapon instanceof Spear) {
             throw new PickUpException("Wizard can't pickup this weapon");
         } else if (weapon instanceof Spell) {
-            this.weapon = weapon;
-            System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+            if (inventory.size() == 0 || inventory.size() == 1) {
+                inventory.add(weapon);
+                super.weapon = weapon;
+                System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+            } else {
+                System.out.println("Inventory is full");
+            }
         }
     }
 
