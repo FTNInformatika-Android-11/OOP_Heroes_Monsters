@@ -8,12 +8,22 @@ import FactoryMethod.WeaponFactory;
 import Models.Heroes.Hero;
 import Models.Weapons.Weapon;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestChangeWeapon2 {
+    private static List<Weapon> weapons = new ArrayList<>() {{
+        add(WeaponFactory.getWeapon("Sword"));
+        add(WeaponFactory.getWeapon("Spear"));
+        add(WeaponFactory.getWeapon("Spell"));
+        add(WeaponFactory.getWeapon("Spell"));
+        add(WeaponFactory.getWeapon("Spear"));
+    }};
+
     public static void main(String[] args) throws PickUpException, FullInventoryException, NoWeaponException {
         Hero swordsman = HeroFactory.getHero("Swordsman");
-        Weapon sword = WeaponFactory.getWeapon("Sword");
 
-        swordsman.getWeapon(sword);
+        swordsman.getWeapon(weapons.get(0), weapons);
 
         swordsman.changeWeapon();
     }
