@@ -17,7 +17,11 @@ public class Swordsman extends Hero {
         if (weapon instanceof Spell) {
             throw new PickUpException("Swordsman can't pickup this weapon");
         } else if (weapon instanceof Sword || weapon instanceof Spear) {
-            if (inventory.size() == 0 || inventory.size() == 1) {
+            if (inventory.size() == 0) {
+                super.weapon = weapon;
+                inventory.add(weapon);
+                System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+            } else if (inventory.size() == 1) {
                 inventory.add(weapon);
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
             } else {
