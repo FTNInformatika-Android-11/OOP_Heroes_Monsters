@@ -1,5 +1,6 @@
 package Models.Heroes;
 
+import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;
 import Models.Weapons.Weapon;
 
@@ -12,7 +13,7 @@ abstract class Hero {
     protected Weapon weapon;
     protected List<Weapon> inventory = new ArrayList<>();
 
-    public abstract void getWeapon(Weapon weapon) throws PickUpException;
+    public abstract void getWeapon(Weapon weapon) throws PickUpException, FullInventoryException;
 
     public abstract void dropWeapon(Weapon weapon);
 

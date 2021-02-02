@@ -1,5 +1,6 @@
 package Models.Heroes;
 
+import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;
 import Models.Weapons.Spear;
 import Models.Weapons.Spell;
@@ -12,7 +13,7 @@ public class Wizard extends Hero {
     }
 
     @Override
-    public void getWeapon(Weapon weapon) throws PickUpException {
+    public void getWeapon(Weapon weapon) throws PickUpException, FullInventoryException {
         if (weapon instanceof Sword || weapon instanceof Spear) {
             throw new PickUpException("Wizard can't pickup this weapon");
         } else if (weapon instanceof Spell) {
@@ -21,7 +22,7 @@ public class Wizard extends Hero {
                 super.weapon = weapon;
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
             } else {
-                System.out.println("Inventory is full");
+                throw new FullInventoryException("Inventory is full");
             }
         }
     }
