@@ -2,16 +2,17 @@ package Tests.Inventory;
 
 import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;
-import Models.Heroes.Swordsman;
-import Models.Weapons.Spear;
-import Models.Weapons.Sword;
+import FactoryMethod.HeroFactory;
+import FactoryMethod.WeaponFactory;
+import Models.Heroes.Hero;
+import Models.Weapons.Weapon;
 
 public class TestFullInventory {
     public static void main(String[] args) throws PickUpException, FullInventoryException {
-        Swordsman swordsman = new Swordsman();
-        Sword sword = new Sword();
-        Spear spear1 = new Spear();
-        Spear spear2 = new Spear();
+        Hero swordsman = HeroFactory.getHero("Swordsman");
+        Weapon sword = WeaponFactory.getWeapon("Sword");
+        Weapon spear1 = WeaponFactory.getWeapon("Spear");
+        Weapon spear2 = WeaponFactory.getWeapon("Spear");
 
         swordsman.getWeapon(sword);
         swordsman.getWeapon(spear1);

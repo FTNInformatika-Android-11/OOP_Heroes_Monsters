@@ -8,7 +8,7 @@ import Models.Weapons.Weapon;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Hero {
+public abstract class Hero {
     private int health;
 
     protected Weapon weapon;

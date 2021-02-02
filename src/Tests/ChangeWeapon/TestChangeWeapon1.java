@@ -1,11 +1,12 @@
 package Tests.ChangeWeapon;
 
 import Exceptions.NoWeaponException;
-import Models.Heroes.Swordsman;
+import FactoryMethod.HeroFactory;
+import Models.Heroes.Hero;
 
 public class TestChangeWeapon1 {
     public static void main(String[] args) throws NoWeaponException {
-        Swordsman swordsman = new Swordsman();
+        Hero swordsman = HeroFactory.getHero("Swordsman");
 
         swordsman.changeWeapon();
     }
