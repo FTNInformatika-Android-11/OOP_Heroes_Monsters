@@ -22,16 +22,17 @@ public abstract class Hero {
             case 0:
                 throw new NoWeaponException("Inventory is Empty");
             case 1:
+                weapons.add(weapon);
                 inventory.remove(position);
-                weapons.remove(weapon);
+                System.out.println("Dropped " + weapon.getClass().getSimpleName());
                 weapon = null;
                 break;
             case 2:
+                weapons.add(weapon);
                 inventory.remove(position);
-                weapons.remove(weapon);
-                position = 0;
+                System.out.println("Dropped " + weapon.getClass().getSimpleName());
+                position--;
                 weapon = inventory.get(position);
-                System.out.println("Weapon changed to " + weapon.getClass().getSimpleName());
                 break;
         }
     }
