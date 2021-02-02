@@ -1,7 +1,7 @@
 package Models.Weapons;
 
 public class Weapon {
-    private int damage;
+    private int damage = 0;
 
     public Weapon(int damage) {
         this.damage = damage;

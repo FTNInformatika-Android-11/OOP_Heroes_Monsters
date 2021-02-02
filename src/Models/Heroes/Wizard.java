@@ -7,8 +7,6 @@ import Models.Weapons.Sword;
 import Models.Weapons.Weapon;
 
 public class Wizard extends Hero {
-    private Weapon weapon;
-
     public Wizard() {
         super(150);
     }

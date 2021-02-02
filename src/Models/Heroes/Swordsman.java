@@ -7,8 +7,6 @@ import Models.Weapons.Sword;
 import Models.Weapons.Weapon;
 
 public class Swordsman extends Hero {
-    private Weapon weapon;
-
     public Swordsman() {
         super(100);
     }
@@ -18,8 +16,12 @@ public class Swordsman extends Hero {
         if (weapon instanceof Spell) {
             throw new PickUpException("Swordsman can't pickup this weapon");
         } else if (weapon instanceof Sword || weapon instanceof Spear) {
-            this.weapon = weapon;
-            System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+            if (inventory.size() == 0 || inventory.size() == 1) {
+                inventory.add(weapon);
+                System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+            } else {
+                System.out.println("Inventory is full");
+            }
         }
     }
 
