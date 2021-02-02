@@ -7,6 +7,8 @@ import Models.Weapons.Sword;
 import Models.Weapons.Weapon;
 
 public class Wizard extends Hero {
+    private Weapon weapon;
+
     public Wizard() {
         super(150);
     }
@@ -16,6 +18,7 @@ public class Wizard extends Hero {
         if (weapon instanceof Sword || weapon instanceof Spear) {
             throw new PickUpException("Wizard can't pickup this weapon");
         } else if (weapon instanceof Spell) {
+            this.weapon = weapon;
             System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
         }
     }
