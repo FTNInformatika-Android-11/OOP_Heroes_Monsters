@@ -19,7 +19,6 @@ public class Wizard extends Hero {
         } else if (weapon instanceof Spell) {
             if (inventory.size() == 0 || inventory.size() == 1) {
                 inventory.add(weapon);
-                super.weapon = weapon;
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
             } else {
                 throw new FullInventoryException("Inventory is full");
