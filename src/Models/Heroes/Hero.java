@@ -12,7 +12,7 @@ import java.util.List;
 public abstract class Hero {
     private int health;
 
-    protected Weapon weapon;
+    protected Weapon weapon = new Weapon(0);
     protected List<Weapon> inventory = new ArrayList<>();
     protected int position = 0;
 
