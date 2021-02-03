@@ -72,4 +72,12 @@ public abstract class Hero {
     public void setHealth(int health) {
         this.health = health;
     }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
 }

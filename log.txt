@@ -1,0 +1,94 @@
+Swordsman picked up Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman wins in duel with Spider
+
+
+Swordsman picked up Sword
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman wins in duel with Spider
+
+
+Swordsman picked up Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Hit
+Spider attacked Swordsman using Hit
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman wins in duel with Spider
+
+
+Swordsman picked up Sword
+Spider attacked Swordsman using Hit
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Spider attacked Swordsman using Bite
+Spider attacked Swordsman using Hit
+Spider attacked Swordsman using Bite
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman attacked Spider using Sword
+Swordsman wins in duel with Spider
+
+
+Wizard picked up Spell
+Dragon attacked Wizard using Fire
+Wizard attacked Dragon using Spell
+Dragon attacked Wizard using Fire
+Dragon attacked Wizard using Hit
+Wizard attacked Dragon using Spell
+Wizard attacked Dragon using Spell
+Dragon attacked Wizard using Fire
+Wizard attacked Dragon using Spell
+Wizard attacked Dragon using Spell
+Wizard wins in duel with Dragon
+
+

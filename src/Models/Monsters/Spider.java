@@ -14,8 +14,10 @@ public class Spider extends Monster {
 
         if (random == 0) {
             hero.setHealth(hero.getHealth() - 5);
+            setAttackType("Hit");
         } else if (random == 1) {
             hero.setHealth(hero.getHealth() - 8);
+            setAttackType("Bite");
         }
     }
 

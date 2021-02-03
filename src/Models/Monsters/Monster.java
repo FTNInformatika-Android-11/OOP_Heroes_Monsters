@@ -5,6 +5,16 @@ import Models.Heroes.Hero;
 public abstract class Monster {
     private int health;
 
+    private String attackType;
+
+    public String getAttackType() {
+        return attackType;
+    }
+
+    public void setAttackType(String attackType) {
+        this.attackType = attackType;
+    }
+
     public abstract void attackHero(Hero hero);
 
     public Monster(int health) {

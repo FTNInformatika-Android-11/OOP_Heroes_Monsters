@@ -2,6 +2,7 @@ package Models.Heroes;
 
 import Exceptions.FullInventoryException;
 import Exceptions.PickUpException;
+import ExternalMethods.ExternalMethods;
 import Models.Weapons.Spear;
 import Models.Weapons.Spell;
 import Models.Weapons.Sword;
@@ -24,10 +25,12 @@ public class Wizard extends Hero {
                 inventory.add(weapon);
                 weapons.remove(weapon);
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+                ExternalMethods.logWriter(this.getClass().getSimpleName() + " picked up " + super.weapon.getClass().getSimpleName() + "\n");
             } else if (inventory.size() == 1) {
                 inventory.add(weapon);
                 weapons.remove(weapon);
                 System.out.println(weapon.getClass().getSimpleName() + " added to inventory");
+                ExternalMethods.logWriter(this.getClass().getSimpleName() + " picked up " + super.weapon.getClass().getSimpleName() + "\n");
             } else {
                 throw new FullInventoryException("Inventory is full");
             }
