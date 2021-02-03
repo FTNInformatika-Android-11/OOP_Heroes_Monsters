@@ -3,6 +3,7 @@ package Models.Heroes;
 import Exceptions.FullInventoryException;
 import Exceptions.NoWeaponException;
 import Exceptions.PickUpException;
+import Models.Monsters.Monster;
 import Models.Weapons.Weapon;
 
 import java.util.ArrayList;
@@ -17,6 +18,10 @@ public abstract class Hero {
 
     public abstract void getWeapon(Weapon weapon, List<Weapon> weapons) throws PickUpException, FullInventoryException;
 
+    public void attackMonster(Monster monster) {
+        monster.setHealth(monster.getHealth() - weapon.getDamage());
+    }
+
     public void dropWeapon(List<Weapon> weapons) throws NoWeaponException {
         switch (inventory.size()) {
             case 0:
@@ -25,7 +30,7 @@ public abstract class Hero {
                 weapons.add(weapon);
                 inventory.remove(position);
                 System.out.println("Dropped " + weapon.getClass().getSimpleName());
-                weapon = null;
+                weapon = new Weapon(0);
                 break;
             case 2:
                 weapons.add(weapon);
